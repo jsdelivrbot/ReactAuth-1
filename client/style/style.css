@@ -1,0 +1,18 @@
+body {
+  height: 100%;
+  width: 100%;
+  background: #43cae2;
+  background: -webkit-linear-gradient(to left, #43cae2, #185a9d);
+  background: linear-gradient(to left, #43cae2, #185a9d);
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white !important;
+  background: #777;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
