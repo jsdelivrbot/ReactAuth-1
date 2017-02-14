@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import * as actions from '../../actions';
 
@@ -42,7 +43,9 @@ function mapStateToProps(state) {
  return { errorMessage: state.auth.error };
 }
 
-export default reduxForm({
- form: 'signin',
- fields: ['email', 'password']
-}, mapStateToProps, actions)(Signin);
+const form = reduxForm({
+  form: 'signin',
+  fields: ['email', 'password']
+})
+
+export default connect(null, actions)(form(Signin))

@@ -8,7 +8,7 @@ const mongoose    = require('mongoose');
 const cors        = require('cors')
 
 // db setup
-mongoose.connect(process.env.DATABASEURL)
+mongoose.connect('mongodb://chris:Auth123@ds147979.mlab.com:47979/react-auth')
 
 // App setup
 app.use(morgan('combined'));
