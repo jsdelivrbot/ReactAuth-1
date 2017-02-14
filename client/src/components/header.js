@@ -10,7 +10,7 @@ class Header extends Component {
           </div>
           <ul className="nav navbar-nav">
             <li className="nav-item">
-              Sign In
+              <a href="/signin">Sign In</a>
             </li>
           </ul>
         </div>
